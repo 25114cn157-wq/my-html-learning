@@ -1,4 +1,12 @@
+:root{
+    --main-color: pink;
+    --sec-color:lightblue;
+    --defpad:12px;
+    --defborder:2pxsolid blue;
 
+     
+
+}
 
 table{
     color: black;
@@ -58,12 +66,12 @@ a{
      margin: 32px;
     }
     .hot{
-        border: 2px solid rgb(0, 0, 0);
+        border: var(--defborder);
        display: inline-block;
         margin: 32px ;
         border: 234px;
         color: blueviolet;
-        background-color: tomato;
+        background-color: var(--sec-color);
          font-weight: 8000;
          font-family: 'Times New Roman', Times, serif;
 
@@ -71,7 +79,7 @@ a{
     }
     nav ul li{
         list-style:none inside;
-        background-color: rgba(216, 216, 15, 0.477);
+        background-color: var(--main-color);
         display:inline ;
     
     
@@ -81,7 +89,7 @@ a{
         height: 25px;
         border: 5px solid black;
         margin: 4px;
-        padding: 5px;
+        padding: var(--defpad);
     }
      .bade papa{
         width: 28px;
@@ -108,4 +116,9 @@ a{
     .box4{
         background-color: lightgoldenrodyellow;
     }
-   
+    @media screen and (max-width:455px) {
+        body{
+         background-color:pink;
+        }
+        
+    }
