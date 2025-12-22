@@ -110,12 +110,17 @@ a{
     nav ul li{
         list-style:none inside;
         background-color: var(--main-color);
-        display:inline ;
+        display:flex ;
+        justify-content: center;
+    align-items:center;
         border: 2px solid black;
         margin: 4px;
+        flex-direction: row;
 border-color: aliceblue;
 ::selection{
     color: green;
+    
+    
 }
     
     }
